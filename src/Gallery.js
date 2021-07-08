@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Vitrine from "./components/Vitrine";
 import { Link } from "react-router-dom";
 import { TiArrowBack } from "react-icons/ti";
+import { VscEmptyWindow } from "react-icons/vsc";
 
 export default function Gallery() {
   let listGallery = getGallery();
@@ -49,7 +50,7 @@ export default function Gallery() {
               </div>
               {/* {!gallery.length && <div className="col s12">Gallery is Empty</div>} */}
               {!gallery.length && (
-                <div className="col s12">Gallery is Empty</div>
+                <div className="col s12"><VscEmptyWindow /> Gallery is Empty</div>
               )}
             </div>
           </div>
