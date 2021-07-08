@@ -236,3 +236,6 @@ nav .input-field i {
 .text-r {
   text-align: right;
 }
+nav .input-field label.active i {
+  color: #adadad !important;
+}
