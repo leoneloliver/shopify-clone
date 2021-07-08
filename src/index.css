@@ -187,7 +187,7 @@ nav .input-field i {
   width: 100% !important;
 }
 .vitrine {
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: 50px;
 }
 .vitrine-item {
