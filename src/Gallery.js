@@ -16,7 +16,9 @@ export default function Gallery() {
 
   return (
     <div className="App">
-      <Header />
+      <div className="dark-mode">
+        <Header />
+      </div>
       <div className="row vitrine-container">
         <div className="col s12 card-panel list-products main-list">
           <div className="row">

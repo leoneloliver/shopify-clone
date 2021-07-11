@@ -6,6 +6,7 @@ nav ul a {
 }
 nav {
   padding: 0px 20px !important;
+  background: #fff !important;
 }
 header {
   position: sticky;
@@ -107,6 +108,15 @@ nav .input-field i {
 }
 .item-gallery {
   margin-bottom: 5px;
+ 
+}
+.vitrine-container .item-gallery{
+  width: 33%;
+}
+.item-gallery .btn-delete{
+  margin-top: -20px !important;
+  position: absolute;
+  right: 20px;
 }
 .gallery-container {
   padding: 18px !important;
@@ -216,7 +226,7 @@ nav .input-field i {
   width: 100%;
 }
 .vitrine-container {
-  padding: 50px;
+  padding: 20px 30px;
 }
 .product-details {
   margin-top: -111px;
@@ -225,7 +235,7 @@ nav .input-field i {
   position: relative;
   color: #fff;
   display: block;
-  width: 90% !important;
+  width: 94% !important;
 }
 .vitrine-price {
   font-size: 1.3rem;
@@ -238,4 +248,13 @@ nav .input-field i {
 }
 nav .input-field label.active i {
   color: #adadad !important;
+}
+.dark-mode nav{
+  background: #000 !important;
+}
+.dark-mode nav a{
+  color: #fff !important;
+}
+.mt-40{
+  margin-top: 40px;
 }

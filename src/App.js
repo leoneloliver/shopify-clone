@@ -8,6 +8,7 @@ import Sidebar from "./components/Sidebar";
 import data from "./products";
 import { FaEye } from "react-icons/fa";
 import { VscEmptyWindow } from "react-icons/vsc";
+import Loading from "./components/Loading";
 
 export default function App() {
   let listItem = data;
@@ -26,6 +27,8 @@ export default function App() {
   } else {
     listGallery = getGallery();
   }
+
+  const [load, setLoad] = useState(true);
 
   const [notes, setNotes] = useState(listItem);
   const [gallery, setGallery] = useState(listGallery);
@@ -119,6 +122,10 @@ export default function App() {
     setTimeout(() => setAlert(null), 3000);
   }
 
+  window.setTimeout(function(){
+    setLoad(false)
+  },1500)
+
   return (
     <div className="App">
       <Header searchFunc={(e) => setSearch(e.target.value)} />
@@ -141,8 +148,7 @@ export default function App() {
               Error! Please inform the data
             </div>
           )}
-
-          {filteredNotes.map((noteItem, index) => {
+          {load ? <Loading /> : filteredNotes.map((noteItem, index) => {
             return (
               <ListProducts
                 key={index}
@@ -156,6 +162,7 @@ export default function App() {
               />
             );
           })}
+          
           {!filteredNotes.length && (
             <div className="col s12">
               <VscEmptyWindow /> Product List Empty
@@ -166,7 +173,8 @@ export default function App() {
         <div className="col s3 gallery-container">
           <h5>New Gallery</h5>
           <div>
-            {gallery.map((noteItem, index) => {
+
+          {gallery.map((noteItem, index) => {
               return (
                 <ListGallery
                   key={index}
@@ -179,6 +187,7 @@ export default function App() {
                 />
               );
             })}
+    
           </div>
           {/* {!gallery.length && <div className="col s12">Gallery is Empty</div>} */}
           {gallery.length !== 0 ? (

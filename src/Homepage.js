@@ -11,7 +11,7 @@ export default function Homepage() {
         <Sidebar />
         <div className="col s10 card-panel list-products main-list">
           <div className="row">
-            <div className="container">
+            <div className="col s9 offset-s1">
               <h5 className="teal darken-3 home-title">
                 You're off to a great start.
               </h5>

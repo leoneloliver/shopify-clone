@@ -6,7 +6,7 @@ const Header = (props) => {
 
   return (
     <header id="nav-home" className="row">
-      <nav className="col s12 grey lighten-5">
+      <nav className="col s12">
         <div className="nav-wrapper">
           <Link to="/" className="brand-logo">
             <FaShopify /> shopify
