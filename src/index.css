@@ -108,6 +108,7 @@ nav .input-field i {
 }
 .item-gallery {
   margin-bottom: 5px;
+  background-color: #f6f6f6 !important;
  
 }
 .vitrine-container .item-gallery{
@@ -214,10 +215,11 @@ nav .input-field i {
   width: 400px;
   transform: rotate(0deg);
   transition: all 0.3s ease;
+  margin-top: -100px;
 }
 
 .vitrine-item:hover img {
-  transform: rotate(10deg);
+  transform: rotate(3deg);
   transition: all 0.3s ease;
   width: 500px;
 }

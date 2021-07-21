@@ -3,7 +3,7 @@ import { FaDollarSign } from "react-icons/fa";
 
 const Vitrine = (props) => {
   return (
-    <div className="grey lighten-5 item-gallery">
+    <div className="item-gallery">
       <div className="row">
         <div className="vitrine-item">
           <img src={props.image} className="" alt={props.title} />
