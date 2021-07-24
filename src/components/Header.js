@@ -1,17 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaShopify, FaUserAlt } from "react-icons/fa";
+import { FiMenu } from "react-icons/fi";
 
 const Header = (props) => {
+
+  function openMenu(){
+    document.querySelector('body').classList.toggle('open');
+  }
 
   return (
     <header id="nav-home" className="row">
       <nav className="col s12">
         <div className="nav-wrapper">
+          <div id="menu" onClick={openMenu}>
+            <FiMenu />
+          </div>
           <Link to="/" className="brand-logo">
             <FaShopify /> shopify
           </Link>
-          <div className="col s5 offset-s3">
+          <div className="col s5 offset-s3 search-bar">
             <form>
               <div className="input-field">
                

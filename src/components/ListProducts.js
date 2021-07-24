@@ -30,7 +30,7 @@ const ListProduct = (props) => {
                 active
               </div>
             </div>
-            <div className="col s4">{props.content}</div>
+            <div className="col s4 hide-mobile">{props.content}</div>
             <div className="col s2">${props.price}</div>
           </div>
         </div>

@@ -22,10 +22,10 @@ export default function Gallery() {
       <div className="row vitrine-container">
         <div className="col s12 card-panel list-products main-list">
           <div className="row">
-            <div className="col s10">
+            <div className="col m6 l10">
               <h5>Your Gallery Preview</h5>
             </div>
-            <div className="col s2">
+            <div className="col s12 m6 l2 ">
               <div className="col s12">
                 <Link
                   to="/adm"

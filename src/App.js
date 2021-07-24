@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import ListProducts from "./components/ListProducts";
 import ListGallery from "./components/ListGallery";
 import CreateProduct from "./components/CreateProduct";
@@ -206,6 +207,7 @@ export default function App() {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
