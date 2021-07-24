@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
 import { AiFillCheckCircle, AiFillTag } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -43,6 +44,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
