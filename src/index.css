@@ -317,4 +317,7 @@ footer a{
   .hide-mobile{
     display: none;
   }
+  h6.card-title{
+    margin-top: 0;
+  }
 }
